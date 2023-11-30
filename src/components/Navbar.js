@@ -16,13 +16,22 @@ const Navbar = ({ children }) => {
                         </label>
                     </div>
                     <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal gap-x-2">
+                        <ul className="menu menu-horizontal gap-x-2 flex items-center">
                             {/* Navbar menu content here */}
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/services">Services</NavLink></li>
                             <li><NavLink to="/contact">Contact</NavLink></li>
                             <li><NavLink to="/login">Login</NavLink></li>
+                            <li className="dropdown dropdown-hover  dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-outline flex content-center text-primary">BOOK NOW</div>
+                                <ul className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><a>Item 1</a></li>
+                                    <li><a>Item 2</a></li>
+                                </ul>
+                            </li>
+
+
                             {/* <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/">Home</NavLink></li> */}
 

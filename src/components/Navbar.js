@@ -17,8 +17,11 @@ const Navbar = ({ children }) => {
                     <div className="flex-none hidden lg:block">
                         <ul className="menu menu-horizontal">
                             {/* Navbar menu content here */}
-                            <li><a>Navbar Item 1</a></li>
-                            <li><a>Navbar Item 2</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>Login</a></li>
                         </ul>
                     </div>
                 </div>

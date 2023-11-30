@@ -1,6 +1,7 @@
 /* import logo from './logo.svg';
 import './App.css'; */
 
+import { Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
@@ -28,11 +29,15 @@ function App() {
       </header> */}
 
       <Navbar>
-        <Home></Home>
-        <About></About>
-        <Services></Services>
-        <Contact></Contact>
-        <Login></Login>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/services" element={<Services></Services>}></Route>
+          <Route path="/contact" element={<Contact></Contact>}></Route>
+          <Route path="/login" element={<Login></Login>}></Route>
+          {/* <Route path="" element={}></Route>
+          <Route path="" element={}></Route> */}
+        </Routes>
       </Navbar>
     </div>
   );

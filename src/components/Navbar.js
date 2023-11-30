@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }) => {
     return (
@@ -15,13 +16,16 @@ const Navbar = ({ children }) => {
                         </label>
                     </div>
                     <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal">
+                        <ul className="menu menu-horizontal gap-x-2">
                             {/* Navbar menu content here */}
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>Login</a></li>
+                            <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/about">About</NavLink></li>
+                            <li><NavLink to="/services">Services</NavLink></li>
+                            <li><NavLink to="/contact">Contact</NavLink></li>
+                            <li><NavLink to="/login">Login</NavLink></li>
+                            {/* <li><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/">Home</NavLink></li> */}
+
                         </ul>
                     </div>
                 </div>

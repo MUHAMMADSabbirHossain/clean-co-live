@@ -1,6 +1,8 @@
 /* import logo from './logo.svg';
 import './App.css'; */
 
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div>
@@ -20,8 +22,7 @@ function App() {
         </a>
       </header> */}
 
-      <h1 className="">clean code</h1>
-      <button className="btn btn-primary">Hello</button>
+      <Navbar></Navbar>
     </div>
   );
 }

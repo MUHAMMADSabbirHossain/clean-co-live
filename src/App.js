@@ -1,6 +1,11 @@
 /* import logo from './logo.svg';
 import './App.css'; */
 
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Login from "./Pages/Login";
+import Services from "./Pages/Services";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -22,7 +27,13 @@ function App() {
         </a>
       </header> */}
 
-      <Navbar></Navbar>
+      <Navbar>
+        <Home></Home>
+        <About></About>
+        <Services></Services>
+        <Contact></Contact>
+        <Login></Login>
+      </Navbar>
     </div>
   );
 }

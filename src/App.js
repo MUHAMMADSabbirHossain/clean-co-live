@@ -21,6 +21,7 @@ function App() {
       </header> */}
 
       <h1 className="">clean code</h1>
+      <button className="btn btn-primary">Hello</button>
     </div>
   );
 }

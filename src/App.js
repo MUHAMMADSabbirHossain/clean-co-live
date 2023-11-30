@@ -20,7 +20,7 @@ function App() {
         </a>
       </header> */}
 
-      <h1>clean code</h1>
+      <h1 className="">clean code</h1>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const Navbar = ({ children }) => {
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
                 <div className="w-full navbar bg-base-100 px-20">
-                    <div className="flex-1 px-2 mx-2 text-2xl">Clean Co.</div>
+                    <div className="flex-1 px-2 mx-2 text-2xl md:font-bold md:text-4xl">Clean Co.</div>
 
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -16,7 +16,7 @@ const Navbar = ({ children }) => {
                         </label>
                     </div>
                     <div className="flex-none hidden lg:block">
-                        <ul className="menu menu-horizontal gap-x-2 items-center">
+                        <ul className="menu menu-horizontal gap-x-2 items-center font-semibold">
                             {/* Navbar menu content here */}
 
                             <li><NavLink to="/">HOME</NavLink></li>

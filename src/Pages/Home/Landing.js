@@ -45,7 +45,7 @@ const Landing = () => {
                     <input type="text" placeholder="Type here" className="input input-bordered w-full max-w" />
                     <input type="text" placeholder="Type here" className="input input-bordered w-full max-w" />
                 </div>
-                <button className="btn btn-primary mt-5">Request a Quote</button>
+                <button className="btn btn-primary mt-5">REQUEST A QOUTE</button>
             </div>
         </div>
     );

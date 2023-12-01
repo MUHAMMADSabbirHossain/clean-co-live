@@ -8,10 +8,23 @@ const Landing = () => {
                 <div className="hero-content flex-col lg:flex-row">
 
                     <div>
-                        <p className="text-xl">Best Quality</p>
-                        <h1 className="text-5xl font-bold">Professional Cleaning Service</h1>
-                        <p className="py-6 max-w-xl">At Clean Co, we go beyond cleaning - we perfect every detail. Our meticulous approach ensures a spotless space, prioritizing your satisfaction. Ready to experience the difference? Schedule your cleaning service now!</p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-delay="200" className="text-xl">Best Quality</p>
+                        <h1
+                            data-aos="fade-right"
+                            data-aos-delay="400"
+                            data-aos-duration="900"
+                            className="text-5xl font-bold">Professional Cleaning Service</h1>
+                        <p
+                            data-aos="fade-right"
+                            data-aos-delay="600"
+                            data-aos-duration="800"
+                            className="py-6 max-w-xl">At Clean Co, we go beyond cleaning - we perfect every detail. Our meticulous approach ensures a spotless space, prioritizing your satisfaction. Ready to experience the difference? Schedule your cleaning service now!</p>
+                        <button data-aos="zoom-in"
+                            data-aos-delay="1300"
+                            className="btn btn-primary">Get Started</button>
                     </div>
 
                     <div className="h-[60vh] shrink-0">

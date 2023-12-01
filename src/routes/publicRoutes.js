@@ -5,10 +5,10 @@ import Login from "../Pages/Login";
 import Services from "../Pages/Services";
 
 export const publicRoute = [
-    { path: "/", name: "Home", Component: Home },
-    { path: "/about", name: "About", Component: About },
-    { path: "/services", name: "Services", Component: Services },
-    { path: "/contact", name: "Contact", Component: Contact },
-    { path: "/login", name: "Login", Component: Login },
+    { path: "/", name: "home", Component: Home },
+    { path: "/about", name: "about", Component: About },
+    { path: "/services", name: "services", Component: Services },
+    { path: "/contact", name: "contact", Component: Contact },
+    { path: "/login", name: "login", Component: Login },
 ];
 

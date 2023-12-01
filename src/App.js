@@ -3,6 +3,11 @@ import './App.css'; */
 
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+// import Home from "./Pages/Home/Home";
+// import About from "./Pages/About";
+// import Services from "./Pages/Services";
+// import Contact from "./Pages/Contact";
+// import Login from "./Pages/Login";
 import { publicRoute } from "./routes/publicRoutes";
 
 
@@ -36,7 +41,10 @@ function App() {
           <Route path="/login" element={<Login></Login>}></Route> */}
 
           {
-            publicRoute.map(({ path, Component }, index) => <Route key={index} path={path} element={<Component />}></Route>)
+            publicRoute.map(({ path, Component }, index) => <Route
+              key={index}
+              path={path}
+              element={<Component />}></Route>)
           }
         </Routes>
       </Navbar>

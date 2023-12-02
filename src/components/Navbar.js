@@ -69,6 +69,17 @@ const Navbar = ({ children }) => {
                     <li><NavLink to="/services">SERVICES</NavLink></li>
                     <li><NavLink to="/contact">CONTACT</NavLink></li>
                     <li><NavLink to="/login">LOGIN</NavLink></li>
+                    <li>
+                        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-200">
+                            <div className="collapse-title text-xl font-medium">
+                                BOOK NOW
+                            </div>
+                            <div className="collapse-content">
+                                <li><NavLink to="/contact">QUICK BOOK</NavLink></li>
+                                <li><NavLink to="/login">PRE BOOK</NavLink></li>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

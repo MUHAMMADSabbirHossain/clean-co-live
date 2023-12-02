@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import useAdmin from '../hooks/useAdmin';
 
 const Navbar = ({ children }) => {
     const [dark, setDark] = useState(false);
     // console.log(dark);
+    const { pathname } = useLocation();
 
     const [admin] = useAdmin();
 
@@ -13,7 +14,14 @@ const Navbar = ({ children }) => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="w-full navbar bg-base-100 px-20">
+                <div className="w-full navbar bg-base-100 lg:px-20">
+
+                    {pathname.includes("dashboard") && (
+                        <label tabIndex={0} htmlFor="my-drawer-2" role="button" className="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                        </label>
+                    )}
+
                     <div className="flex-1 px-2 mx-2 text-2xl md:font-bold md:text-4xl">Clean Co.</div>
 
                     <div className="flex-none lg:hidden">

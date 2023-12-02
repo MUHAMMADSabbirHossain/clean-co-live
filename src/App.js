@@ -9,9 +9,13 @@ import Navbar from "./components/Navbar";
 // import Contact from "./Pages/Contact";
 // import Login from "./Pages/Login";
 import { publicRoute } from "./routes/publicRoutes";
+import { privateRoutes } from "./routes/privateRoutes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from "react";
+import Services from "./Pages/Services";
+import PrivateRoute from "./authentication/PrivateRoute";
+import About from "./Pages/About";
 
 
 
@@ -55,6 +59,18 @@ function App() {
               path={path}
               element={<Component />}></Route>)
           }
+
+          <Route element={<PrivateRoute />}>
+            {/* <Route path="/about" element={<About></About>}></Route>
+            <Route path="/services" element={<Services></Services>}></Route> */}
+            {
+              privateRoutes.map(({ path, Component }, index) => <Route
+                key={index}
+                path={path}
+                element={<Component />}></Route>)
+            }
+          </Route>
+
         </Routes>
       </Navbar>
     </div >

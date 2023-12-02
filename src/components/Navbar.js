@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import useAdmin from '../hooks/useAdmin';
 
 const Navbar = ({ children }) => {
     const [dark, setDark] = useState(false);
     // console.log(dark);
+
+    const [admin] = useAdmin();
 
     return (
         <div className="drawer drawer-end" data-theme={dark ? "dark" : "light"}>
@@ -23,6 +26,7 @@ const Navbar = ({ children }) => {
                             {/* Navbar menu content here */}
 
                             <li><NavLink to="/">HOME</NavLink></li>
+                            {admin && <li><NavLink to="/dashboard">DASHBOARD</NavLink></li>}
                             <li><NavLink to="/about">ABOUT</NavLink></li>
                             <li><NavLink to="/services">SERVICES</NavLink></li>
                             <li><NavLink to="/contact">CONTACT</NavLink></li>

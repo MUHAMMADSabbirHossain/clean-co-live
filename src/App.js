@@ -16,6 +16,8 @@ import { useEffect } from "react";
 import Services from "./Pages/Services";
 import PrivateRoute from "./authentication/PrivateRoute";
 import About from "./Pages/About";
+import AdminRoute from "./authentication/AdminRoute";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 
 
@@ -71,6 +73,9 @@ function App() {
             }
           </Route>
 
+          <Route element={<AdminRoute />}>
+            <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+          </Route>
         </Routes>
       </Navbar>
     </div >

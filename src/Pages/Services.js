@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import fetcher from '../api';
 
 const Services = () => {
 
@@ -9,7 +10,7 @@ const Services = () => {
         // axios.get("http://localhost:5000/service").then(res => setServices(res.data));
 
         (async () => {
-            const res = await axios.get("http://localhost:5000/service");
+            const res = await fetcher.get("/service");
             setServices(res.data);
         })()
     }, []);

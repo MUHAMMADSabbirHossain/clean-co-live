@@ -7,7 +7,6 @@ import AddService from './AddService';
 const Dashboard = () => {
     return (
         <DashboardSidebar>
-            <h1>Clean Co.</h1>
 
             <Outlet></Outlet>
         </DashboardSidebar>

@@ -34,7 +34,7 @@ const Navbar = ({ children }) => {
                             {/* Navbar menu content here */}
 
                             <li><NavLink to="/">HOME</NavLink></li>
-                            {admin && <li><NavLink to="/dashboard">DASHBOARD</NavLink></li>}
+                            {admin && <li><NavLink to="/dashboard/add-service">DASHBOARD</NavLink></li>}
                             <li><NavLink to="/about">ABOUT</NavLink></li>
                             <li><NavLink to="/services">SERVICES</NavLink></li>
                             <li><NavLink to="/contact">CONTACT</NavLink></li>

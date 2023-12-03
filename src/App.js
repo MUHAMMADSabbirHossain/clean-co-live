@@ -18,6 +18,8 @@ import PrivateRoute from "./authentication/PrivateRoute";
 import About from "./Pages/About";
 import AdminRoute from "./authentication/AdminRoute";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import AddAdmin from "./Pages/Dashboard/AddAdmin";
+import AddService from "./Pages/Dashboard/AddService";
 
 
 
@@ -74,7 +76,10 @@ function App() {
           </Route>
 
           <Route element={<AdminRoute />}>
-            <Route path="/dashboard" element={<Dashboard></Dashboard>}></Route>
+            <Route path="/dashboard" element={<Dashboard></Dashboard>}>
+              <Route path="add-admin" element={<AddAdmin></AddAdmin>}></Route>
+              <Route path="add-service" element={<AddService></AddService>}></Route>
+            </Route>
           </Route>
         </Routes>
       </Navbar>

@@ -3,7 +3,7 @@ import { Navigate, Outlet, useLocation } from 'react-router-dom';
 
 const PrivateRoute = () => {
     const location = useLocation();
-    const user = false;
+    const user = true;
 
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace></Navigate>

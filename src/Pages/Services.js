@@ -10,7 +10,7 @@ const Services = () => {
         // axios.get("http://localhost:5000/service").then(res => setServices(res.data));
 
         (async () => {
-            const res = await fetcher.get("/service");
+            const res = await fetcher.get("/get-service");
             setServices(res.data);
         })()
     }, []);
